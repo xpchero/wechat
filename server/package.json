@@ -16,8 +16,8 @@
     "url": "https://github.com/xpchero/wechat/issues"
   },
   "homepage": "https://github.com/xpchero/wechat#readme",
+  
   "dependencies": {
-    "dotenv": "^16.0.3",
     "openai": "^3.1.0"
   }
 }

@@ -1,0 +1,31 @@
+
+
+/* 发布评论 */
+.pub-comment {
+    background-color: #F7F7F7;
+    padding: 20rpx 40rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+  }
+  .pub-left {
+    background-color: #fff;
+    color: #7F7F7F;
+    border-radius: 10rpx;
+    margin-right: 20rpx;
+  }
+  .pub-input {
+    padding: 10rpx 20rpx;
+    width: 500rpx;
+  }
+  .pub-button {
+    color: #7F7F7F;
+    border: solid 1rpx #7F7F7F;
+    border-radius: 10rpx;
+    padding: 10rpx 15rpx;
+    direction:ltr;
+  }
+  
+  

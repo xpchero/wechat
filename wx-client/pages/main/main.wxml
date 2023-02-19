@@ -1,0 +1,40 @@
+<view class="talker-content">
+    <block wx:for="{{chatList}}">
+        <block>
+            <view class="user-img">
+                <view class="user">
+                    <view class="user-nick">{{item.nickName}}</view>
+                    <image class="user-face" src="{{item.faceImg}}"></image>
+                </view>
+            </view>
+            <view class="user-right">
+                <text class="user-text">{{item.askText}}</text>
+            </view>
+        </block>
+
+
+        <block wx:if="{{item.isAnswered}}">
+            <view class="talker-img">
+                <image class="face" src="../../images/hitalker.png"></image>
+                <view class="nick">iTalker</view>
+            </view>
+            <view class="talker-left">
+                <text class="talker-text">{{item.answerText}}</text>
+            </view>
+        </block>
+        <block wx:if="{{item.isWaiting}}">
+            <view class="talker-img">
+                <image class="face" src="../../images/hitalker.png"></image>
+                <view class="nick">iTalker</view>
+            </view>
+            <view class="talker-left">
+                <text class="talker-text">...</text>
+            </view>
+        </block>
+    </block>
+    <view class="talker-buttom">
+        <input class="talker-input" placeholder="{{plcaceHolder}}" bindinput="getInputValue" value="{{inputValue}}" cursor-spacing="10"></input>
+
+        <button class="talker-button" type="primary" size="mini" bindtap="publishChat">发送</button>
+    </view>
+</view>
